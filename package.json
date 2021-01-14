@@ -1,15 +1,15 @@
 {
-  "name": "spigot-drama-generator",
+  "name": "larrygenerator",
   "version": "1.0.0",
-  "description": "Generates drama around the Spigot community",
+  "description": "true stories about larry",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write '**/*.{js,css,json,md}'",
     "dev": "wrangler dev"
   },
-  "author": "md678685 <1917406+md678685@users.noreply.github.com>",
-  "license": "MIT",
+  "author": "LLS/LLM Conglomerate.",
+  "license": "GPL3",
   "devDependencies": {
     "prettier": "^1.18.2"
   }

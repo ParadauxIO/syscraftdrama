@@ -1,6 +1,6 @@
-name = "spigot-drama-generator"
+name = "larrygenerator"
 type = "webpack"
-account_id = "c29688adad64beb8d6171dae3d0c394c"
+account_id = "38df507baff0cce8d7b17a60f4f4b1c9"
 workers_dev = true
-route = ""
+route = "larrygenerator.com/*"
 zone_id = ""

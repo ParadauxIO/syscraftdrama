@@ -1,5 +1,6 @@
-# Spigot Drama Generator
+# larrygenerator
 
-This generates drama around the Spigot community.
+This generates true facts about *The* Larry.
 
-Inspired by (and heavily borrows from) [asiekierka's Minecraft Drama Generator](https://github.com/asiekierka/MinecraftDramaGenerator).
+Please direct all questions, queries and concerns to /dev/null
+    

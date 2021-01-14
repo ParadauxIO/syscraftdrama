@@ -5,29 +5,30 @@ function renderDrama(message, share, sharePath, teaser) {
     return `
 <html>
     <head>
-        <title>Spigot Drama Generator</title>
-        <meta name="description" content="${message}" />
+        <title>larrygenerator</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <meta name="description" content="True stories about Larry!"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <meta name="og:title" content="${teaser}"/>
         <meta name="og:type" content="website"/>
         <meta name="og:url" content="${share}"/>
-        <meta name="og:site_name" content="Spigot Drama Generator"/>
-        <meta name="og:description" content="${message}"/>
+        <meta name="og:site_name" content="Larry Generator"/>
+        <meta name="og:description" content="True stories about Larry!"/>
 
         <link rel="icon" href="data:,">
         <style>
-            body {
-                font-family: sans-serif;
-                text-align: center;
-            }
-            #more:visited {
-                color: blue;
+            body { 
+                padding-top:50px; 
+                background-color: #121212;
+                color: white;
             }
         </style>
+
         <script>
-            const konami = ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"];
-            const inputs = ["", "", "", "", "", "", "", "", "", ""]
+            const konami = ["l", "a", "r", "r", "y", "."];
+            const inputs = ["", "", "", "", "", ""]
 
             function pushInput(key) {
                 inputs.shift();
@@ -51,7 +52,7 @@ function renderDrama(message, share, sharePath, teaser) {
                 pushInput(e.key);
 
                 if (checkInputs()) {
-                    document.getElementById("fight").innerHTML = "<img src=\\"https://media1.tenor.com/images/747305f3c5cbcb6bce00b9bea17a7978/tenor.gif\\" alt=\\"FIIIIIIGHT!\\"/>"
+                    document.getElementById("larry").innerHTML = "<img src=\\"https://media3.giphy.com/media/mAyKtbkBTTpFm/giphy.gif\\" alt=\\"LARRYY!\\"/>"
                 }
 
                 if (e.key == "Enter") {
@@ -63,28 +64,23 @@ function renderDrama(message, share, sharePath, teaser) {
             window.onkeydown = onKeyDown;
         </script>
     </head>
-    <body>
-        <h3>Spigot Drama Generator</h3>
-        <h1>${message}</h1>
-        <span id="fight"></span>
-        <h6>
-            <a id="more" href="/">Generate more drama!</a> (or press enter)
-            <br />
-            <br />
-            This website is made in jest - don't take it too seriously!
-            <br />
-            Developed by mdcfe; PRs welcome on <a href="https://github.com/mdcfe/spigot-drama-generator">GitHub</a>.
-            <br />
-            Inspired by (and heavily borrows from) <a href="https://github.com/asiekierka/MinecraftDramaGenerator/">asiekierka's Minecraft Drama Generator</a>.
-            <br />
-            <br />
-            <i>Now available in <a href="https://twitter.com/SpigotDrama">Twitter</a> form!</i>
-            <br />
-            <a href="https://api.chew.pro/spigotdrama">Chew's JSON API (unofficial)</a>
-            <br />
-            <a href="https://syscraft.org/">Long live Syscraft - the new place for resources for Minecraft server admins, developers and hosts</a>
-        </h6>
+    
+    <body class="container">
+        <main>
+            <div class="jumbotron" style="background-color:#1D1D1D;">
+                <h1>larrygenerator.com</h1>
+                <hr>
+                <span id="larry"></span>
+                <h3>${message}</h3>  
+                <button type="button" class="btn btn-dark" onclick="location.href='/';">learn more about larry</button>
+            </div>
+        </main>
+
+        <footer>
+            <a href="https://syscraft.org" class="text-center text-muted">Syscraft is fully endorsed by LLS/LLM Conglomerate.</a>
+        </footer>
     </body>
+
 </html>
     `
 }
@@ -146,6 +142,7 @@ function handle404() {
 addEventListener('fetch', event => {
     event.respondWith(handleRequest(event.request))
 })
+
 /**
  * Respond with hello worker text
  * @param {Request} request
