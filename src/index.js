@@ -3,7 +3,7 @@ const { combinations, sentences, social } = require("./data.json");
 
 function renderDrama(message, share, sharePath, teaser) {
     return `
-<html>
+<!DOCTYPE html>
     <head>
         <title>larrygenerator</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -15,7 +15,7 @@ function renderDrama(message, share, sharePath, teaser) {
         <meta name="og:type" content="website"/>
         <meta name="og:url" content="${share}"/>
         <meta name="og:site_name" content="Larry Generator"/>
-        <meta name="og:description" content="True stories about Larry!"/>
+        <meta name="og:description" content="${message}"/>
 
         <link rel="icon" href="data:,">
         <style>
