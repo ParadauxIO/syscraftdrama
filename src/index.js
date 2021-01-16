@@ -228,7 +228,7 @@ let render404 = () => {
         <meta name="og:site_name" content="Larry Generator"/>
         <meta name="og:description" content="no u!"/>
     
-        <img src='https://cdn.paradaux.io/img/4itkq.gif'>
+        <img style="display: block; margin-left: auto; margin-right: auto;" src='https://cdn.paradaux.io/img/4itkq.gif'>
     </html>
     `
 }
