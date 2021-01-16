@@ -3,4 +3,4 @@ type = "webpack"
 account_id = "38df507baff0cce8d7b17a60f4f4b1c9"
 workers_dev = true
 route = "larrygenerator.com/*"
-zone_id = ""
+zone_id = "9ebc46c98f3325ed64771c790fde0fcd"
