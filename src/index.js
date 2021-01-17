@@ -150,7 +150,7 @@ let renderDrama = (message, share, sharePath, teaser) => {
         <style>
             body { 
                 padding-top:50px; 
-                background-color: #121212;
+                /*background-color: #121212;*/
                 color: white;
             }
         </style>
@@ -194,9 +194,9 @@ let renderDrama = (message, share, sharePath, teaser) => {
         </script>
     </head>
     
-    <body class="container">
+    <body class="container ">
         <main>
-            <div class="jumbotron" style="background-color:#1D1D1D;">
+            <div class="jumbotron" class="blue-gradient">
                 <h1>syscraftdrama.club</h1>
                 <hr>
                 <span id="larry"></span>
