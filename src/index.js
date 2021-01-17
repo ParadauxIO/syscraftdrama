@@ -207,8 +207,7 @@ let renderDrama = (message, share, sharePath, teaser) => {
 
         <footer>
             <p class="text-center text-muted"><a href="https://syscraft.org" class="text-center">Syscraft</a> is fully 
-            endorsed by the <a href="https://larrylovesquad.com">LLS</a>/<a href="https://larrylynchmob.com">LLM</a> 
-            Conglomerate. | We have an <a href="https://larrygenerator.com/api/generate">API</a>! | Contribute on 
+            endorsed by Larry International. | We have an <a href="https://larrygenerator.com/api/generate">API</a>! | Contribute on 
             <a href="https://github.com/LLS-LLM/larrygenerator">GitHub!</a></p>
         </footer>
     </body>
